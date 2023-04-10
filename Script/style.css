@@ -1,0 +1,51 @@
+
+.footer{
+    background-color: black;
+    height: 400px;
+    display: flex;
+}
+.col img{
+    margin-top: 50px;
+    width: 88px;
+    height: 90px;
+}
+.col p{
+    color:aliceblue;
+}
+.col a{
+    color:aliceblue;
+}
+.wrapper-col-1{
+    margin-left: 100px;
+}
+.wrapper-col-2{
+    margin-top: 50px;
+    margin-left: 90px;
+}
+.wrapper-col-2 hr{
+    color: rgb(255, 255, 255);
+    border-width: 3px;
+    opacity: 1;
+}
+.wrapper-col-3{
+    margin-top: 50px;
+}
+.wrapper-col-3 img{
+    width: 334px;
+    height: 178px;
+    margin-left: 50px;
+}
+.copyright{
+    background-color: rgb(46, 47, 47);
+    width: 100%;
+    height: 52px;
+    
+}
+.copyright p{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding-top: 10px;
+}
+.copyright hr{
+    border-width: 1px;
+}
