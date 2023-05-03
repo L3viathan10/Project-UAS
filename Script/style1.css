@@ -1,0 +1,143 @@
+html, body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    width: 100vw;
+    background-color: #2e3192;
+    position: fixed;
+    z-index: 1000;
+}
+
+.judul{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+
+p.judul::after{
+    /* white-space: nowrap; */
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+    margin-left: 5px;
+}
+
+p.judul{
+    font-size: 1.2rem;
+}
+
+
+.profazreyeni{
+    padding-top: 150px;
+}
+.isiberita img{
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 580px;
+}
+.isiberita p{
+    padding-left: 150px;
+    padding-top: 10px;
+    padding-right: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.isiberita .atas{
+    padding-top: 50px;
+}
+.judulberita1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+
+
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    height: 400px;
+    
+}
+.footer img{
+    margin-top: 50px;
+    width: 100px;
+    height: 90px;
+}
+.cols p{
+    color:aliceblue;
+}
+.cols a{
+    color:aliceblue;
+}
+.foot1{
+    padding-left: 100px;
+    color: white;
+} 
+.foot2{
+    padding: 50px;
+    color: white;
+}
+.foot2 a{
+    color: white;
+}
+.foot2 hr{
+    border-top: 5px solid white;
+    opacity: 0.8;
+}
+.foot2 ul{
+    text-decoration: none;
+    list-style: none;
+    margin-left: -30px;
+    line-height: 40px;
+}
+
+.foot3{
+    padding: 50px;
+    color: white;
+}
+.foot3 a{
+    color: white;
+}
+.foot3 hr{
+    border-top: 5px solid white;
+    opacity: 0.8;
+}
+.foot3 ul{
+    text-decoration: none;
+    list-style: none;
+    margin-left: -30px;
+    line-height: 40px;
+}
+.fot{
+    font-weight: bold;
+}
+.foot{
+    line-height: 30px;
+}
+.copyright{
+    background-color: rgb(46, 47, 47);
+    width: 100%;
+    height: 52px;
+    
+}
+.copyright p{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding-top: 10px;
+}
+.copyright hr{
+    border-width: 1px;
+}
+
+
