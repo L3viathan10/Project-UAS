@@ -86,9 +86,14 @@ p.judul{
 .footer{
     margin-top: 100px;
     background-color: black;
-    height: 400px;
-    
+    height: 400px;   
 }
+
+.footer_virtual_tour{
+    background-color: black;
+    height: 400px;
+}
+
 .footer img{
     margin-top: 50px;
     width: 130px;
