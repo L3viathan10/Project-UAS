@@ -1,17 +1,97 @@
 html, body{
     max-width: 100vw;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 a{
     text-decoration: none;
 }
 
+
 .header {
     width: 100vw;
-    background-color: #2e3192;
-    position: fixed;
+    background-color: #073C64;
+    height: 80px;
     z-index: 1000;
+    position: fixed;
+}
+nav.sticky{
+    margin-top: -40px;
+    width: 100vw;
+    background-color: #073C64;
+    height: 80px;
+    transition: 0.2s;
+
+}
+.header img{
+    margin-left: 140px;
+    height: 80px;
+    width: 200px;
+}
+.nav-content{
+    background-color: #1A2C43;
+    padding-right:  160px;
+    height: 40px;
+}
+.nav-content ul li a{
+    padding: 8px 10px ;
+    color: white;
+    
+}
+.nav-content ul li a:hover{
+    color: yellow;
+}
+.navbar2{
+    padding-right: 120px;
+}
+.navbar2 ul li a {
+    color: aliceblue;
+    padding-top: 15px;
+}
+.navbar2 ul li a:hover{
+    color: yellow;
+}
+.navbar2 input{
+    margin-top: 15px;
+    width: 190px;
+    margin-right: 50px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    appearance: none;
+}
+.navbar2 input::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+.navbar2 input::-moz-search-cancel-button{
+    -moz-appearance: none;
+}
+.navbar2 input::-ms-clear{
+    display: none;
+}
+.search .icon{
+    position: absolute;
+    right: 11px;
+    font-size: 1.4em;
+    color: black;
+    line-height: 57px;
+    margin-right: 5px;
+    top: 9px;
+
+}
+.search button{
+    color: black;
+    background-color: transparent;
+    width: 40px;
+    height: 50px;
+    box-shadow: none;
+    border: none;
+    margin-right: 150px;
+    
 }
 
 .judul{
@@ -38,12 +118,14 @@ p.judul{
 .profazreyeni{
     padding-top: 150px;
 }
+
 .isiberita img{
+    display:flex;
     margin-top: 50px;
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin-left: 580px;
+    justify-content: center;
 }
 .isiberita p{
     padding-left: 150px;
@@ -62,11 +144,9 @@ p.judul{
     
 }
 
-
-
 .footer{
     margin-top: 50px;
-    background-color: black;
+    background-color: #073C64;
     height: 400px;
     
 }
@@ -127,7 +207,7 @@ p.judul{
     line-height: 30px;
 }
 .copyright{
-    background-color: rgb(46, 47, 47);
+    background-color: #1A2C43;
     width: 100%;
     height: 52px;
     
