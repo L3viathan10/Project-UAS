@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="Script/js.js">
 </head>
 <body>
-  <nav>
+	<nav>
 		<div class="nav-content">
 			<div class="navbar navbar-expand-lg bg-body-tertiary" >
 				<ul  id="menu-menu-utama-atas-in"
@@ -83,9 +83,10 @@
 											Galeri
 										</a>
 										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="#"style="color: black;">Foto</a></li>
+											<li><a class="dropdown-item" href="foto.html"style="color: black;">Foto</a></li>
 											<li><a class="dropdown-item" href="video.html"style="color: black;">Video</a></li>
 											<li><a class="dropdown-item" href="virtual_tour.html"style="color: black;">Virtual Tour</a></li>
+											<li><a class="dropdown-item" href="kontak.html"style="color: black;">Kontak</a></li>
 										</ul>
 									</li>
 									<li class="search nav-item">
@@ -252,55 +253,55 @@
     </div>
 
     <footer class="footer">
-        <div class="row">
-            <div class="foot1 col-4">
-                <a href class="footer-brand">
-                    <img src="img/logo unri.png" alt="logo unri">
-                </a>
-                <p class="fot">UNIVERSITAS RIAU <br></p>
-                <Kampus class="foot">Kampus Binawidya <br>
-                    Jl. HR Soebrantas KM. 12.5, <br>
-                    Simpang Baru, Binawidya, Pekanbaru-28293 <br>
-                    informatika@eng.unri.ac.id 
-                </p>
-            </div>
-            <div class="foot2 col-4">
-                    <p>S1 Teknik Informatika</p>
-                    <hr>
-                    <ul class="fooot">
-                        <li><a href="#">Event</a></li>
-                        <li><a href="#">Prestasi Mahasiswa</a></li>
-                        <li><a href="#">Berita</a></li>
-                        <li><a href="#">Tutorial</a></li>
-                    </ul>  
-            </div>
-            <div class="foot3 col-4">
-				<p>Link Terkait</p>
-                    <hr>
-                    <ul class="fooot">
-                        <li><a href="#">SITEI(Akademik)</a></li>
-                        <li><a href="#">Beasiswa</a></li>
-                        <li><a href="#">Konferensi Internasional</a></li>
-                        <li><a href="#">Tracer Study</a></li>
-                    </ul>  
-            </div>
-        </div>
-    </footer>
-    <footer class="copyright">
-		<p>Copyright All Right Reversed 2021</p>
-    </footer>
-    <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      var nav = document.querySelector("nav")
-      window.addEventListener("scroll", ()=>{
-        if(document.documentElement.scrollTop > 20){
-          nav.classList.add("sticky");
-        }else{
-          nav.classList.remove("sticky");
-        }
-      })
-    </script>
-    	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <div class="row">
+          <div class="foot1 col-4">
+              <a href class="footer-brand">
+                  <img src="img/logo unri.png" alt="logo unri">
+              </a>
+              <p style="color: yellow;" class="fot">UNIVERSITAS RIAU <br></p>
+              <p class="foot">Kampus Binawidya <br>
+                  Jl. HR Soebrantas KM. 12.5, <br>
+                  Simpang Baru, Binawidya, Pekanbaru-28293 <br>
+                  informatika@eng.unri.ac.id 
+              </p>
+          </div>
+          <div class="foot2 col-4">
+                  <p>S1 Teknik Informatika</p>
+                  <hr>
+                  <ul class="fooot">
+                      <li><a href="#">Event</a></li>
+                      <li><a href="#">Prestasi Mahasiswa</a></li>
+                      <li><a href="#">Berita</a></li>
+                      <li><a href="#">Tutorial</a></li>
+                  </ul>  
+          </div>
+          <div class="foot3 col-4">
+      <p>Link Terkait</p>
+                  <hr>
+                  <ul class="fooot">
+                      <li><a href="#">SITEI(Akademik)</a></li>
+                      <li><a href="#">Beasiswa</a></li>
+                      <li><a href="#">Konferensi Internasional</a></li>
+                      <li><a href="#">Tracer Study</a></li>
+                  </ul>  
+          </div>
+      </div>
+  </footer>
+  <footer class="copyright">
+  <p>Copyright All Right Reversed 2021</p>
+  </footer>
+  <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  var nav = document.querySelector("nav")
+  window.addEventListener("scroll", ()=>{
+    if(document.documentElement.scrollTop > 20){
+      nav.classList.add("sticky");
+    }else{
+      nav.classList.remove("sticky");
+    }
+  })
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>
