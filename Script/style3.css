@@ -1,0 +1,317 @@
+body{
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+html{
+    max-width: 100vw;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    width: 100vw;
+    background-color: #2e3192;
+    position: fixed;
+    z-index: 1000;
+}
+
+.judul{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+
+p.judul::after{
+    /* white-space: nowrap; */
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+    margin-left: 5px;
+}
+
+p.judul{
+    font-size: 1.2rem;
+}
+
+.carousel{
+    margin-top: 90px;
+}
+
+.profil{
+    margin-left: 150px;
+    font-family: 'poppins';
+    padding-top: 50px;
+}
+.profil hr{
+    border-width: 3px;
+    opacity: 1;
+    color: black;
+}
+.profil .teknik1{
+    color: black;
+    text-align: justify;
+    line-height: 30px;
+}
+.profil hr{
+    width: 650px; padding-right: 50px ; height: 1px;
+}
+.profil img{
+    height: 300px; width: 530px; padding-right: 50px;
+}
+.profil .teknik{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.selanjutnya{
+    background-color: white;
+    color: black;
+    display: absolute;
+    outline: #2E3192;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.selanjutnya:hover{
+    background-color: #2E3192;
+    color: white;
+}
+.col-6 a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer{
+    /* margin-top: 100px; */
+    max-width: 100vw;
+    background-color: black;
+    height: 400px;
+    
+}
+.footer img{
+    margin-top: 50px;
+    width: 130px;
+    height: 90px;
+}
+.cols p{
+    color:aliceblue;
+}
+.cols a{
+    color:aliceblue;
+}
+.foot1{
+    padding-left: 100px;
+    color: white;
+} 
+.foot2{
+    padding: 50px;
+    color: white;
+}
+.foot2 a{
+    color: white;
+}
+.foot2 hr{
+    border-top: 5px solid white;
+    opacity: 0.8;
+}
+.foot2 ul{
+    text-decoration: none;
+    list-style: none;
+    margin-left: -30px;
+    line-height: 40px;
+}
+
+.foot3{
+    padding: 50px;
+    color: white;
+}
+.foot3 a{
+    color: white;
+}
+.foot3 hr{
+    border-top: 5px solid white;
+    opacity: 0.8;
+}
+.foot3 ul{
+    text-decoration: none;
+    list-style: none;
+    margin-left: -30px;
+    line-height: 40px;
+}
+.fot{
+    font-weight: bold;
+}
+.foot{
+    line-height: 30px;
+}
+.copyright{
+    background-color: rgb(46, 47, 47);
+    width: 100%;
+    height: 52px;
+    
+}
+.copyright p{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding-top: 10px;
+}
+.copyright hr{
+    border-width: 1px;
+}
+
+
+
+
+.container{
+    display: flex;
+    padding-left: 50px;
+}
+.container img{
+    height: 250px; 
+    object-fit: cover;
+    padding: 15px;  
+    border-radius: 10px;
+}
+.card{
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.berita{
+    height: 363px;
+    background-color: #2E3192;
+    
+}
+
+.berita h1{
+    padding-left: 160px;
+    padding-top: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.berita p{
+    padding-left: 160px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.berita1{
+    background-color: white;
+
+}
+.berita11{
+    width: 310px; height: 415px; margin-left: 30px;
+}
+.berita22{
+    width: 310px; height: 415px; margin-left: 110px;
+}
+.berita33{
+    width: 310px; height: 415px; margin-left: 100px;
+}
+.BeritaLebih{
+    display: flex;
+    justify-content: end;
+    padding-top: 300px;
+    padding-right: 190px;
+}
+
+.NamaHalaman{
+    /* width: fit-content; */
+    height: 100px;
+    margin-top: 105px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Kontak{
+    text-align: left;
+    padding-left: 30px;
+}
+
+.VirtualTour{
+    padding: bottom 0; ;
+}
+
+.event{
+    padding-top: 100px;
+}
+.event h1{
+    color: black;
+    padding-left: 160px;
+    font-weight: bold;
+}
+.event hr{
+    margin-left: 160px; 
+    width: 300px; 
+    border-top: 20px solid#252995;
+}
+.container2{
+    display: flex;
+    padding-left: 130px;
+    padding-top: 50px;
+}
+.container2 img{
+    height: 250px; 
+    object-fit: cover;
+    padding: 15px;  
+    border-radius: 10px;
+}
+.container2 card{
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.BeritaLebih2{
+    display: flex;
+    justify-content: end;
+    padding-top: 100px;
+    padding-right: 190px;
+}
+.kemitraan h1{
+    color: black;
+    padding-left: 160px;
+    font-weight: bold;
+}
+.kemitraan hr{
+    margin-left: 160px; 
+    width: 300px; 
+    border-top: 20px solid#252995;
+}
+.kemitraan{
+    padding-top: 100px;
+}
+.KEMITRAAN{
+    padding-top: 50px;
+    padding-left: 160px;
+}
+.kemitraan1{
+    display: flex;
+}
+.kemitraan1 img{
+    width: 170px;
+    height: 140px;
+}
+.kemitraan2{
+    display: flex;
+    padding-top: 50px;
+}
+.kemitraan2 img{
+    width: 170px;
+    height: 140px;
+}
