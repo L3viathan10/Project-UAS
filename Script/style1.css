@@ -36,6 +36,14 @@ nav.sticky{
     padding-right:  160px;
     height: 40px;
 }
+.nav-content ul{
+    display: block;
+    float: right;
+}
+.nav-content ul li{
+    list-style: none;
+    display: inline-block;
+}
 .nav-content ul li a{
     padding: 8px 10px ;
     color: white;
@@ -43,6 +51,22 @@ nav.sticky{
 }
 .nav-content ul li a:hover{
     color: yellow;
+
+}
+.navbar2 ul li .dropdown-menu{
+    display: none;
+}
+.navbar2 ul li:hover .dropdown-menu{
+    display: block;
+    background: #073C64;
+    position: absolute;
+}
+.navbar2 ul li:hover .dropdown-menu li a{
+    border-radius: 5px;
+}
+.navbar2 ul li:hover .dropdown-menu li a:hover{
+    background: none;
+    box-shadow: none;
 }
 .navbar2{
     padding-right: 120px;
@@ -72,6 +96,9 @@ nav.sticky{
 }
 .navbar2 input::-ms-clear{
     display: none;
+}
+.dropdown-menu a{
+    color: aliceblue;
 }
 .search .icon{
     position: absolute;
@@ -145,14 +172,15 @@ p.judul{
 }
 
 .footer{
-    margin-top: 50px;
+    padding-left: 75px;
+    margin-top: 100px;
     background-color: #073C64;
-    height: 400px;
-    
+    height: 400px;   
 }
+
 .footer img{
-    margin-top: 50px;
-    width: 100px;
+    margin-top: 70px;
+    width: 130px;
     height: 90px;
 }
 .cols p{
@@ -162,7 +190,7 @@ p.judul{
     color:aliceblue;
 }
 .foot1{
-    padding-left: 100px;
+    padding-left: 50px;
     color: white;
 } 
 .foot2{
@@ -173,7 +201,8 @@ p.judul{
     color: white;
 }
 .foot2 hr{
-    border-top: 5px solid white;
+    width: 250px;
+    border-top: 5px solid yellow;
     opacity: 0.8;
 }
 .foot2 ul{
@@ -191,7 +220,8 @@ p.judul{
     color: white;
 }
 .foot3 hr{
-    border-top: 5px solid white;
+    width: 250px;
+    border-top: 5px solid yellow;
     opacity: 0.8;
 }
 .foot3 ul{
@@ -201,6 +231,7 @@ p.judul{
     line-height: 40px;
 }
 .fot{
+    color: yellow;
     font-weight: bold;
 }
 .foot{
@@ -220,5 +251,4 @@ p.judul{
 .copyright hr{
     border-width: 1px;
 }
-
 
