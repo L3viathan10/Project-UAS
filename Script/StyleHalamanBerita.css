@@ -135,7 +135,7 @@ nav.sticky{
 
 .footer img{
     margin-top: 70px;
-    width: 130px;
+    width: 95px;
     height: 90px;
 }
 .cols p{
@@ -160,11 +160,14 @@ nav.sticky{
     border-top: 5px solid yellow;
     opacity: 0.8;
 }
-.foot2 ul{
+.foot2 ul li{
     text-decoration: none;
     list-style: none;
     margin-left: -30px;
     line-height: 40px;
+}
+.foot2 ul li a:hover{
+    color: yellow;
 }
 
 .foot3{
@@ -179,17 +182,22 @@ nav.sticky{
     border-top: 5px solid yellow;
     opacity: 0.8;
 }
-.foot3 ul{
+.foot3 ul li{
     text-decoration: none;
     list-style: none;
     margin-left: -30px;
     line-height: 40px;
 }
+.foot3 ul li a:hover{
+    color: yellow;
+}
 .fot{
+    padding-top: 20px;
     color: yellow;
     font-weight: bold;
 }
 .foot{
+    margin-top: -10px;
     line-height: 30px;
 }
 .copyright{
@@ -207,6 +215,22 @@ nav.sticky{
     border-width: 1px;
 }
 
+.arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #073C64;
+    color: white;
+    bottom: 60px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+}
+.arrow:hover{
+    color: white;
+}
 
 .HBerita1{
     display: flex;
