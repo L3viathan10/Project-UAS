@@ -230,7 +230,7 @@ nav.sticky{
     list-style: none;
     margin-top: -10px;
     padding-left: 20px;
-    font-family: avenir;
+    font-family: Arial, Helvetica, sans-serif;
     color: #4F4F4F;
 }
 .sidebar ul li:hover{
@@ -247,12 +247,12 @@ nav.sticky{
 }
 
 .sejarah{
-    margin-right: 150px;
-    width: 810px;
+    margin-right: 130px;
+    width: 780px;
 }
 .sejarah .akreditas{
     width: 800px;
-    padding-right: 160px;
+    padding-right: 100px;
 }
 .sejarah .dosen1{
     margin-left: -30px;
@@ -274,7 +274,7 @@ nav.sticky{
     color: yellow;
 }
 .sejarah h3{
-    width: 810px;
+    width: 870px;
     margin-left: -90px;
     text-align: center;
     color: #073C64;
@@ -305,7 +305,7 @@ nav.sticky{
     padding-top: 0px;
     margin-top: 0px;
     text-align: justify;
-    width: 810px;
+
 }
 .sejarah ol li{
     margin-left: -105px;
@@ -318,23 +318,16 @@ nav.sticky{
     color: white;
     font-weight: bold;
     margin-left: 150px;
-    padding-right: 150px;
     padding-left: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-top: 20px;
     position: absolute;
     bottom: 125px;
     font-size: 50px;
+    width: 1000px;
     background-color: rgba(0, 0, 0, 0.511);
-    
-}
-.JudulBerita{
-    color: black;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-
+    
 }
 .hero{
     margin-top: 80px;
@@ -345,14 +338,21 @@ nav.sticky{
     height: 540px;
 }
 
+.JudulBerita{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
 .Sejarah{
     display: flex;
     margin-left: 150px;
     margin-top: 100px;
+    gap: 150px;
 }
-.sejarah{
-    margin-left: 150px;
-}
+
 .sejarah h3{
     border-bottom: 3px solid #FFBD07;
     padding-bottom: 13px;
@@ -433,6 +433,9 @@ nav.sticky{
 }
 .box-news ul li a{
     color: #000;
+}
+.box-news ul li a:hover{
+    text-decoration: underline;
 }
 .box-news ul li .read-more{
     font-family: Arial, Helvetica, sans-serif;

@@ -141,55 +141,155 @@ p.judul{
     font-size: 1.2rem;
 }
 
+.hero h1{
+    color: white;
+    font-weight: bold;
+    margin-left: 150px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 125px;
+    font-size: 50px;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.511);
+    
+}
+.hero{
+    margin-top: 80px;
+    display: flex;
+}
+.hero img{
+    width: 100vw;
+    height: 540px;
+}
+
+
+.Sejarah{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 100px;
+    gap: 50px;
+}
+.sejarah{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.sejarah1{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.sidebar{
+    background-color: #DAD7D7;
+    padding-right: 60px;
+    height: 230px;
+}
+.sidebar h6{
+    color: #4F4F4F;
+    padding-left: 55px;
+    padding-top: 30px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar ul li{
+    list-style: none;
+    margin-top: -10px;
+    padding-left: 20px;
+    font-family: avenir;
+    color: #4F4F4F;
+}
+.sidebar ul li:hover{
+    color: black;
+}
+.sidebar hr{
+    opacity: 1;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 200px;
+}
+.sidebar .side{
+    margin-left: 30px;
+}
+
+
+.tenagaKependidikan h3{
+    width: 865px;
+    margin-left: 60px;
+    text-align: center;
+    color: #073C64;
+    border-bottom: 3px solid #FFBD07;
+    padding-bottom: 13px;
+}
+.tenagaKependidikan h3 span{
+    font-size: 36px;
+    padding: 5px 20px;
+    border-bottom: 6px solid #FFBD07;
+}
+.video{
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.video iframe{
+    width: 850px;
+   margin-bottom: 30px;
+}
+
+.Kontak{
+    margin-left: 35px;
+}
 
 .akreditasi{
-    padding-left: 150px;
+    margin-top: 50px;
+    padding-left: 60px;
 }
-.akreditasi h3{
+
+.akreditasi p{
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-size: 30px;
 }
 .akreditasi hr{
     width: 300px;
-    border-top: 20px solid#073C64;
+    border-top: 10px solid#073C64;
     opacity: 1;
 }
 
 .Afoto{
     display: flex;
     padding-top: 50px;
+    gap: 55px;
 }
 .Afoto img{
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     object-fit: cover;
-    margin-right: 55px;
 }
 
 
 .mikrotik{
-    padding-left: 150px;
-    padding-top: 100px;
+    margin-top: 50px;
+    padding-left: 60px;
 }
-.mikrotik h3{
+.mikrotik p{
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-size: 30px;
 }
 .mikrotik hr{
     width: 300px;
-    border-top: 20px solid#073C64;
+    border-top: 10px solid#073C64;
     opacity: 1;
 }
 
 .Mfoto{
     display: flex;
     padding-top: 50px;
+    gap: 55px;
 }
 .Mfoto img{
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     object-fit: cover;
-    margin-right: 55px;
 }
 
 .footer{

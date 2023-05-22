@@ -137,27 +137,108 @@ p.judul::after{
     margin-left: 5px;
 }
 
+.containerberita{
+    margin-top: 30px;
+}
 p.judul{
     font-size: 1.2rem;
 }
+.hero h1{
+    color: white;
+    font-weight: bold;
+    margin-left: 150px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 125px;
+    font-size: 50px;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.511);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.hero{
+    margin-top: 80px;
+    display: flex;
+}
+.hero img{
+    width: 100vw;
+    height: 540px;
+}
 
+.box-news{
+    background: #EEE;
+    width: 330px;
+    margin-top: 200px;
+}
+.box-news .titlehead{
+    background: #013880;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 20px 30px;
+}
+.box-news ul{
+    padding: 30px;
+    padding-bottom: 0px;
+}
+.box-news ul li{
+    list-style: none;
+    margin-bottom: 30px !important;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+}
+.box-news ul li a{
+    color: #000;
+}
+.box-news ul li a:hover{
+    text-decoration: underline;
+}
+.box-news ul li .read-more{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    background: #000;
+    font-size: 12px;
+    padding: 0px 10px;
+    margin-left: 70px;
+    display: inline-block;
+    border-top-right-radius: 25% 15px;
+    border-bottom-right-radius: 25% 15px;
+    text-align: end;
+}
+.box-news ul li .read-more:hover{
+    color: yellow;
+}
+.col-xs-6{
+    width: 50%;
+}
+.read-more .fa{
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.box-news .row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
 .profazreyeni{
-    padding-top: 150px;
+    padding-top: 0px;
+    margin-left: 150px;
 }
 
 .isiberita img{
     display:flex;
     margin-top: 50px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
     object-fit: cover;
-    justify-content: center;
 }
-.isiberita p{
-    padding-left: 150px;
+.isiberita p{   
     padding-top: 10px;
-    padding-right: 150px;
+    padding-right: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 
@@ -167,10 +248,23 @@ p.judul{
 }
 .judulberita1{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    
 }
-
+.judulberita1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+}
+.news-share{
+    margin-top: 50px;
+}
+.SHARE{
+    display: flex;
+    gap: 10px;
+}
+.news-share ul li{
+    list-style: none;
+}
 .footer{
     padding-left: 75px;
     margin-top: 100px;
