@@ -12,7 +12,7 @@ a{
 
 
 .header {
-    width: 100vw;
+    width: 100%;
     background-color: #073C64;
     height: 80px;
     z-index: 1000;
@@ -70,6 +70,8 @@ nav.sticky{
 }
 .navbar2{
     padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
 }
 .navbar2 ul li a {
     color: aliceblue;
@@ -81,7 +83,7 @@ nav.sticky{
 .navbar2 input{
     margin-top: 15px;
     width: 190px;
-    margin-right: 50px;
+    margin-right: 45px;
     margin-left: 10px;
     border: none;
     border-radius: 20px;
@@ -119,10 +121,6 @@ nav.sticky{
     border: none;
     margin-right: 150px;
     
-}
-.col-6 a{
-    color: black;
-    text-decoration: none;
 }
 
 .footer{
@@ -464,5 +462,187 @@ nav.sticky{
 .box-news .row{
     margin-right: -15px;
     margin-left: -15px;
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    left: 90px;
+    top: 10px;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 50px;
+    height: 28px;
+    left: -12px;
+    opacity: 1;
+    top: -18px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px)
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, -1px)
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0)
+}
+
+
+@media screen and (max-width: 570px){
+    .menu-toggle{
+        display: flex;
+    }
+    .nav-content{
+        display: none;
+    }
+    .nav-content ul li{
+        display: none;
+    }
+    .navbar2 ul li{
+        display: none;
+    }
+    .header{
+        height: 60px;
+        position: fixed;
+    }
+    .header img{
+        width: 120px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .navbar2 .search{
+        display: none;
+    }
+
+    .footer{
+        margin-top: 50px;
+        height: 1000px;
+        display: flex;
+    }
+    .foot1{
+        margin-left: -52px;
+    }
+    .foot2{
+        margin-left: -41px;
+    }
+    .foot3{
+        margin-left: -41px;
+    }
+    .footer img{
+        margin-top: 80px;
+        margin-left: 81px;
+    }
+    .foot1 .fot{
+        margin-left: -7px;
+        text-align: center;
+    }
+    .foot1 .foot{
+        text-align: center;
+        margin-left: -15px;
+    }
+    .foot2 p{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .foot2 hr{
+        margin-left: -6px;
+    }
+    .foot2 ul li{
+        margin-left: px;
+        text-align: center;
+    }
+
+    .foot3 p{
+        margin-top: -60px;
+        margin-left: -4px;
+        text-align: center;
+    }
+    .foot3 hr{
+        margin-left: -6px;
+    }
+    .foot3 ul li{
+        text-align: center;
+    }
+    .hero{
+        margin-top: -10px;
+    }
+    .hero img{
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .hero h1{
+        color: white;
+        font-weight: bold;
+        margin-left: 0px;
+        padding-left: 30px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        position: absolute;
+        bottom: 372px;
+        font-size: 25px;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.511);
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    .Sejarah{
+        flex-direction: column;
+    }
+    .sidebar{
+        margin-top: -60px;
+        margin-left: -140px;
+        width: 370px;
+        height: 450px;
+    }
+    .sidebar hr{
+        width: 320px;
+    }
+    .sidebar ul li{
+        font-size: 12px;
+    }
+
+    .sejarah h3{
+        margin-top: -100px;
+        width: 370px;
+        font-size: 15px;
+        margin-left: -140px;
+        font-weight: 700;
+    }
+    .sejarah p{
+        margin-left: -140px;
+        width: 370px;
+    }
+
 }
 

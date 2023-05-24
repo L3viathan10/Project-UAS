@@ -1,10 +1,6 @@
-@font-face {
-    font-family: circularstd;
-    src: url(font/circular-std-medium-500.ttf);
-}
 
 html, body{
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -17,7 +13,7 @@ a{
 
 
 .header {
-    width: 100vw;
+    width: 100%;
     background-color: #073C64;
     height: 80px;
     z-index: 1000;
@@ -75,6 +71,8 @@ nav.sticky{
 }
 .navbar2{
     padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
 }
 .navbar2 ul li a {
     color: aliceblue;
@@ -86,7 +84,7 @@ nav.sticky{
 .navbar2 input{
     margin-top: 15px;
     width: 190px;
-    margin-right: 50px;
+    margin-right: 45px;
     margin-left: 10px;
     border: none;
     border-radius: 20px;
@@ -139,7 +137,7 @@ p.judul::after{
     height: 1px;
     background-color: black;
     display: block;
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 p.judul{
@@ -152,11 +150,11 @@ p.judul{
 
 .profil{
     display: flex;
-    font-family: 'poppins';
+    font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
     justify-content: center;
     margin: 0 160px 0 160px;
-    gap: 20px;
+    gap: 50px;
 }
 .profil hr{
     border-width: 3px;
@@ -172,6 +170,7 @@ p.judul{
 .profil hr{
     width: 650px;
     height: 1px;
+    background-color: black;
 }
 .profil img{
     height: 340px; 
@@ -179,8 +178,8 @@ p.judul{
     object-fit: cover;
 }
 .profil .teknik{
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: 750;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
@@ -310,19 +309,25 @@ p.judul{
     width: 100vw;
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 60px;
 }
 .container img{
-    height: 250px; 
+    height: 300px; 
     object-fit: cover;
     padding: 15px;  
     border-radius: 10px;
 }
 .container a{
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container a:hover{
-    color: #073C64;
+    color: #FFBD07;
+}
+.card-text a{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
 .card-text a:hover{
     color: black;
@@ -332,8 +337,8 @@ p.judul{
 .card{
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.25); 
     overflow: hidden;
-    width: 310px; 
-    height: 415px;
+    width: 360px; 
+    height: 500px;
 }
 .berita{
     width: 100%;
@@ -362,15 +367,23 @@ p.judul{
 .BeritaLebih{
     display: flex;
     justify-content: end;
-    padding-top: 300px;
+    padding-top: 400px;
     padding-right: 190px;
     
 }
+.BeritaLebih a{
+    color: black;
+}
+.BeritaLebih2 a{
+    color: black;
+}
 .BeritaLebih a:hover{
     text-decoration: underline;
+    color: #FFBD07;
 }
 .BeritaLebih2 a:hover{
     text-decoration: underline;
+    color: #FFBD07;
 }
 .event{
     padding-top: 100px;
@@ -389,11 +402,11 @@ p.judul{
 .container2{
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 60px;
     padding-top: 50px;
 }
 .container2 img{
-    height: 250px; 
+    height: 300px; 
     object-fit: cover;
     padding: 15px;  
     border-radius: 10px;
@@ -406,9 +419,14 @@ p.judul{
 }
 .container2 a{
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .container2 a:hover{
-    color: #073C64;
+    color: #FFBD07;
+}
+.card-text a:hover{
+    color: black;
+    text-decoration: underline;
 }
 .BeritaLebih2{
     display: flex;
@@ -470,4 +488,426 @@ p.judul{
 .kemitraan2 img{
     width: 170px;
     height: 140px;
+}
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    left: 90px;
+    top: 10px;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 50px;
+    height: 28px;
+    left: -12px;
+    opacity: 1;
+    top: -18px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px)
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, -1px)
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0)
+}
+
+
+
+@media screen and (max-width: 570px){
+    .menu-toggle{
+        display: flex;
+    }
+    .nav-content{
+        display: none;
+    }
+    .nav-content ul li{
+        display: none;
+    }
+    .navbar2 ul li{
+        display: none;
+    }
+    .header{
+        height: 60px;
+        position: fixed;
+    }
+    .header img{
+        width: 120px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .navbar2 .search{
+        display: none;
+    }
+    #carouselExample{
+        margin-top: -20px;
+        
+    }
+    .profil{
+       flex-direction: column-reverse;
+    }
+    .profil img{
+        margin-top: -30px;
+        width: 350px;
+        height: 250px;
+        margin-left: -140px;
+    }
+    .profil .teknik{
+        margin-top: -30px;
+        margin-left: -140px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 1000;
+    }
+    .profil hr{
+        margin-left: -160px;
+        width: 150px;
+        margin-top: -10px;
+    }
+    .profil .teknik1{
+        margin-left: -140px;
+        margin-right: -140px;
+        font-size: 15px;
+        line-height: 30px;
+        font-family: 'Lato';
+    }
+    .berita h1{
+        margin-left: -140px;
+    }
+    .berita p{
+        margin-left: -140px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .card:hover{
+        transform: scale(1.01);
+    }
+    .container2 .card:hover{
+        transform: scale(1.01);
+    }
+    .BeritaLebih{
+        margin-top: 1050px;
+        margin-right: -160px;
+    }
+    .event{
+        margin-top: 0px;        
+    }
+    .event h1{
+        margin-left: -140px;
+    }
+    .event hr{
+        margin-left: -140px;
+    }
+    .container2{
+        margin-left: 15px;
+        flex-direction: column-reverse;
+    }
+    .BeritaLebih2{
+        margin-right: -160px;
+        margin-top: -70px;
+    }
+    .kemitraan{
+        margin-top: 0px;
+    }
+    .kemitraan h1{
+        margin-left: -140px;
+    }
+    .kemitraan hr{
+        margin-left: -140px;
+    }
+    .kemitraan1{
+        margin-top: -30px;
+        gap: 10px;
+    }
+    .kemitraan1 .card{
+        width: 70px;
+        height: 60px;
+    }
+    .kemitraan1 img{
+        width: 70px;
+        height: 60px;
+        object-fit: cover;
+    }
+    .kemitraan2{
+        margin-top: -30px;
+        gap: 20px;
+    }
+    .kemitraan2 .card{
+        width: 70px;
+        height: 60px;
+    }
+    .kemitraan2 img{
+        width: 70px;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .footer{
+        margin-top: 50px;
+        height: 1000px;
+        display: flex;
+    }
+    .foot1{
+        margin-left: -48px;
+    }
+    .foot2{
+        margin-left: -48px;
+    }
+    .foot3{
+        margin-left: -48px;
+    }
+    .footer img{
+        margin-top: 80px;
+        margin-left: 85px;
+    }
+    .foot1 .fot{
+        margin-left: 58px;
+    }
+    .foot1 .foot{
+        text-align: center;
+        margin-left: -15px;
+    }
+    .foot2 p{
+        margin-left: 55px;
+    }
+    .foot2 hr{
+        margin-left: 5px;
+    }
+    .foot2 ul li{
+        text-align: center;
+    }
+
+    .foot3 p{
+        margin-top: -60px;
+        margin-left: 82px;
+    }
+    .foot3 hr{
+        margin-left: 5px;
+    }
+    .foot3 ul li{
+        text-align: center;
+    }
+    
+
+    
+    
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 780px){
+    .menu-toggle{
+        display: flex;
+    }
+    .nav-content{
+        display: none;
+    }
+    .nav-content ul li{
+        display: none;
+    }
+    .navbar2 ul li{
+        display: none;
+    }
+    .header{
+        height: 60px;
+        position: fixed;
+    }
+    .header img{
+        width: 120px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .navbar2 .search{
+        display: none;
+    }
+    #carouselExample{
+        margin-top: -20px;
+        
+    }
+    .profil{
+       flex-direction: column-reverse;
+    }
+    .profil img{
+        margin-top: -30px;
+        width: 350px;
+        height: 250px;
+        margin-left: -140px;
+    }
+    .profil .teknik{
+        margin-top: -30px;
+        margin-left: -140px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 1000;
+    }
+    .profil hr{
+        margin-left: -160px;
+        width: 150px;
+        margin-top: -10px;
+    }
+    .profil .teknik1{
+        margin-left: -140px;
+        margin-right: -140px;
+        font-size: 15px;
+        line-height: 30px;
+        font-family: 'Lato';
+    }
+    .berita h1{
+        margin-left: -140px;
+    }
+    .berita p{
+        margin-left: -140px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .card:hover{
+        transform: scale(1.01);
+    }
+    .container2 .card:hover{
+        transform: scale(1.01);
+    }
+    .BeritaLebih{
+        margin-top: 1050px;
+        margin-right: -160px;
+    }
+    .event{
+        margin-top: 0px;        
+    }
+    .event h1{
+        margin-left: -140px;
+    }
+    .event hr{
+        margin-left: -140px;
+    }
+    .container2{
+        margin-left: 15px;
+        flex-direction: column-reverse;
+    }
+    .BeritaLebih2{
+        margin-right: -160px;
+        margin-top: -70px;
+    }
+    .kemitraan{
+        margin-top: 0px;
+    }
+    .kemitraan h1{
+        margin-left: -140px;
+    }
+    .kemitraan hr{
+        margin-left: -140px;
+    }
+    .kemitraan1{
+        margin-top: -30px;
+        gap: 10px;
+    }
+    .kemitraan1 .card{
+        width: 70px;
+        height: 60px;
+    }
+    .kemitraan1 img{
+        width: 70px;
+        height: 60px;
+        object-fit: cover;
+    }
+    .kemitraan2{
+        margin-top: -30px;
+        gap: 20px;
+    }
+    .kemitraan2 .card{
+        width: 70px;
+        height: 60px;
+    }
+    .kemitraan2 img{
+        width: 70px;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .footer{
+        margin-top: 50px;
+        height: 1000px;
+        display: flex;
+    }
+    .foot1{
+        margin-left: -48px;
+    }
+    .foot2{
+        margin-left: -48px;
+    }
+    .foot3{
+        margin-left: -48px;
+    }
+    .footer img{
+        margin-top: 80px;
+        margin-left: 85px;
+    }
+    .foot1 .fot{
+        margin-left: 58px;
+    }
+    .foot1 .foot{
+        text-align: center;
+        margin-left: -15px;
+    }
+    .foot2 p{
+        margin-left: 55px;
+    }
+    .foot2 hr{
+        margin-left: 5px;
+    }
+    .foot2 ul li{
+        text-align: center;
+    }
+
+    .foot3 p{
+        margin-top: -60px;
+        margin-left: 82px;
+    }
+    .foot3 hr{
+        margin-left: 5px;
+    }
+    .foot3 ul li{
+        text-align: center;
+    }
+
+    
+    
+
+
 }

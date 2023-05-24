@@ -12,7 +12,7 @@ a{
 
 
 .header {
-    width: 100vw;
+    width: 100%;
     background-color: #073C64;
     height: 80px;
     z-index: 1000;
@@ -70,6 +70,8 @@ nav.sticky{
 }
 .navbar2{
     padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
 }
 .navbar2 ul li a {
     color: aliceblue;
@@ -81,7 +83,7 @@ nav.sticky{
 .navbar2 input{
     margin-top: 15px;
     width: 190px;
-    margin-right: 50px;
+    margin-right: 45px;
     margin-left: 10px;
     border: none;
     border-radius: 20px;
@@ -120,7 +122,6 @@ nav.sticky{
     margin-right: 150px;
     
 }
-
 .judul{
     display: flex;
     width: 100vw;
