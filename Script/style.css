@@ -96,6 +96,8 @@ nav.sticky {
     z-index: 10000;
     transform: translateY(0);
     opacity: 1;
+    height: auto;
+    line-height: normal;
 }
 
 .navbar2 ul li:hover .dropdown-menu li a {

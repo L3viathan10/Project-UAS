@@ -5,6 +5,25 @@ html, body{
     padding: 0;
     overflow-x: hidden;
 }
+@keyframes scrollAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #myElement {
+    animation: scrollAnimation 0.5s ease-out;
+    /* Ubah durasi (0.5s) dan timing function (ease-out) sesuai kebutuhan */
+  }
+
+  #myElement.animate {
+    animation-play-state: running;
+  }
+  
 
 a{
     text-decoration: none;
@@ -53,13 +72,20 @@ nav.sticky{
     color: yellow;
 
 }
-.navbar2 ul li .dropdown-menu{
-    display: none;
+.navbar2 ul li .dropdown-menu {
+    display: block;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
 }
-.navbar2 ul li:hover .dropdown-menu{
+
+.navbar2 ul li:hover .dropdown-menu {
     display: block;
     background: #073C64;
     position: absolute;
+    z-index: 10000;
+    transform: translateY(0);
+    opacity: 1;
 }
 .navbar2 ul li:hover .dropdown-menu li a{
     border-radius: 5px;
