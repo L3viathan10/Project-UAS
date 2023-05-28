@@ -1071,6 +1071,11 @@ nav .closeMenu {
         margin: -70px 0px 0 0px;
     }
 
+    .sejarah h3 span {
+        font-size: 36px;
+        padding: 5px 20px;
+        border-bottom: 7px solid #FFBD07;
+    }
     .sejarah p {
         line-height: 30px;
         width: 320px;
@@ -1507,6 +1512,11 @@ nav .closeMenu {
         font-size: 15px;
         font-weight: 700;
         margin: -70px 0px 0 0px;
+    }
+    .sejarah h3 span {
+        font-size: 36px;
+        padding: 5px 20px;
+        border-bottom: 7px solid #FFBD07;
     }
 
     .sejarah p {
@@ -1945,6 +1955,11 @@ nav .closeMenu {
         font-size: 15px;
         font-weight: 700;
         margin: -70px 0px 0 0px;
+    }
+    .sejarah h3 span {
+        font-size: 36px;
+        padding: 5px 20px;
+        border-bottom: 7px solid #FFBD07;
     }
 
     .sejarah p {
