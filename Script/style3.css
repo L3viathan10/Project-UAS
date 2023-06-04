@@ -427,6 +427,8 @@ p.judul{
 }
 .tenagaKependidikan2 iframe{
     margin-left: 35px;
+    width: 600px;
+    height: 600px;
 }
 .text-center{
     margin-left: 150px;
